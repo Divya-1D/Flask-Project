@@ -1,0 +1,45 @@
+<!-- This file will show the details for route '/about' which shows extension for base -->
+{% extends 'base.html' %}
+{% block body %}
+<br>
+<!-- class row will divide the page for name detail and description about me -->
+<div class="row">
+    <div class="col-10">
+        <h4>About Me</h4>
+        
+        <span class="d-block p-4 bg-danger text-white">
+            <h4>Hi, I am Divya Panchal</h4>
+        </span>
+    </div>
+</div>
+
+
+<br>
+<br>
+
+<!-- Other class row for about me details including various bootstrap css -->
+<div class="row">
+    <div class="col-3">
+        <!-- img source for omage and class within to show the picture on left corner -->
+        <img src="{{url_for('static', filename='img/p.jpeg')}}"  alt="" width="320" height="400" class="rounded-float-start">
+    </div>
+
+    <!-- color and background feature of bootstrap css used for styling -->
+    <div class="col-9">
+        <p>
+            <h4>I am a programming student who made this website using python Flask.</h4>  
+        </p>
+
+        <h5>
+            <div class="bg-danger p-2 text-white bg-opacity-95">I learned how to make web app using Python Flask,as one of my subject named "Advanced Object Oriented Programming".</div>
+            <div class="bg-danger p-2 text-white bg-opacity-75">I am successfully on the edge of finishing my 1st year in AEC program at TAV College, Montreal, Canada</div>
+            <div class="bg-danger p-2 text-white bg-opacity-50">Talking about the program it is 2 year AEC "Internet Programming" with big data certification including an internship.</div>
+            <div class="bg-danger p-2 text-white bg-opacity-25">I am open to work for an organization as an intern or part-time to use this knowledge and enhance more.</div>
+        </h5>
+       
+        <div class="bg-danger p-2 text-success bg-opacity-10">Contact Me : divyapanchal0195@gmail.com</div>
+
+    </div>
+</div>
+
+{% endblock %}

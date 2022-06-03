@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+<!-- Shows the details of project page -->
+{% block body %}
+<div class="row justify-content=center">
+    <div class="col-md-10">
+        <br>
+        <h1>Projects</h1>
+        <span class="col-6 text-info">
+            <h4>This page will show you the details of my project work done in this semester using Python Laungage</h4>
+        </span>
+      
+
+
+        <!-- Spinners Components from bootstrap css contents along with the details : 1 -->
+        <p>
+            <div class="card text-bg-dark mb-3 " style="max-width: 60rem;">
+                    <div class="card-header">
+                        <button class="btn btn-dark" type="button" disabled>
+                            <span class="spinner-grow spinner-grow-sm text-info" role="status" aria-hidden="true"></span>
+                            Minesweeper Game
+                        </button>
+                    </div>
+
+                    <!-- color and background Cards used from bootstrap css to shoe project details : 1 -->
+                    <div class="card-body">
+                      <p class="card-text">This is the basic game named "Minesweeper" made using the concepts
+                        of OOP in python which consists of a  Class named :MinesweeperBoard</p>
+                        <p>Different functions to give functionality to the game </p>
+                        <p>This Project creates the board of desired size by user</p>
+                        <p>And game becomes ready to play on the Terminal window VS code.</p> 
+                    </div>
+            </div>
+        </p>
+
+
+
+        <!-- Spinners Components from bootstrap css contents along with the details : 2 -->
+        <p>
+            <div class="card text-bg-dark mb-3" style="max-width: 60rem;">
+                    <div class="card-header">
+                        <button class="btn btn-dark" type="button" disabled>
+                            <span class="spinner-grow spinner-grow-sm  text-info" role="status" aria-hidden="true"></span>
+                            First Web-App using Flask
+                        </button>
+                    </div>
+
+                    <!-- color and background Cards used from bootstrap css to shoe project details : 2 -->
+                    <div class="card-body">
+                      <p class="card-text">This is my first web-app as a project part which uses the FLASK and SQLite for creating Database</p>
+                        <p>I made a project using the concepts of flask , like giving the routes , navigating to particular route ,
+                            Adding the data as well as Filtering the required data</p>
+                        <p>It was showing the details of customers Name, City, Postal Code etc</p>
+                        <p>And it shows filtered data : The details of customers based on City name</p>
+                    </div>
+            </div>
+        </p>
+</div>
+
+{% endblock %}
